@@ -1,0 +1,988 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --main-color: rgb(210, 88, 88);
+  --white: #fff;
+}
+
+/* Navbar */
+.navbar{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase ;
+}
+
+.navbar .brand{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+.navbar .nav-link{
+  color: var(--white);
+  font-size: 18px;
+  transition: all 0.3s ease;
+  margin: 0 6px;
+  margin-left: 20px;
+}
+.navbar .dropdown-menu{
+  background-color: var(--white);
+  border-radius: 0%;
+  overflow: hidden;
+}
+.navbar .dropdown-menu .dropdown-item{
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #6d6d6d;
+}
+.navbar .dropdown-menu .dropdown-item:hover{
+  background-color: var(--white);
+  color:var(--main-color);
+  border-bottom: none;
+}
+
+.navbar .nav-link:hover{
+  color:var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+.form .input{
+  position: absolute;
+  right: 5rem;
+  background: none;
+  border: none;
+  color: var(--white);
+  border-radius: 0;
+  border-bottom: 1px solid var(--white);
+  outline-style: none;
+}
+.form .input:focus{
+  border-bottom: 1px solid var(--white);
+  background: none;
+  box-shadow:none;
+}
+.form .input-group .btn{
+  border-radius: 0;
+  border: none;
+  color:var(--white);
+  background:none;
+  position: absolute;
+  top: 6px;
+  right: 5rem;
+  font-size: 20px;
+  z-index: 99;
+  transition: color 0.3s ease;
+}
+.form .input-group #cart-btn{
+  position: absolute;
+  top: 13px;
+  right: 1rem; 
+  color: var(--white);
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+.form .input-group #cart-btn span{
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 1px;
+  border-radius: 50%;
+  font-weight: 400;
+  font-size: 12px;
+  color:var(--white);
+  z-index: 1
+}
+.form .input-group .btn1:hover, 
+.form .input-group #cart-btn:hover, 
+.form .input-group .btn:hover{
+  color: var(--main-color);
+}
+
+/* Carousel */
+
+.carousal{
+    height: 45rem;
+}
+.carousal img{
+  height: 100%;
+  width: 100%;
+}
+
+.carousal .carousel-indicators button {
+  background-color: #acacac; 
+  width: 12px; 
+  height: 12px; 
+  border-radius: 50%;
+  margin: 0 5px; 
+}
+
+.carousal .carousel-indicators .active {
+  background-color:var(--white);
+}
+
+
+.caption{
+  width: 100%;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-13%, -50%);
+}
+
+.caption p {
+  font-weight: 100;
+  line-height: 5px;
+  font-size: 30px;
+}
+
+.caption h1{
+  font-family: 'Arizonia', cursive;
+  font-size: 8rem;
+}
+
+.caption .btn-danger{
+  font-size: 20px;
+  font-weight: 100;
+  background:none;
+  border-radius: 20px;
+  padding: 5px 30px;
+  border-color: var(--white);
+}
+
+.caption .btn-danger:hover{
+  background:var(--white);
+  color:  var(--main-color);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* Offer Section */
+
+.offer-card .content{
+  width: 70%;
+  position:absolute;
+  top: 40%;
+  left: 10%;
+  line-height: 10px;
+  letter-spacing: 0.1px;
+}
+.offer-card .contentOne{
+  width: 88%;
+  position:absolute;
+  top: 20%;
+  left: 10%;
+  line-height: 10px;
+}
+
+.offer-card  p{
+  font-size: 30px;
+}
+.offer-card  h3{
+  font-size: 40px;
+}
+.offer-card .contentOne .btn1{
+  color: black;
+}
+.offer-card .btn{
+  background: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.offer-card .btn:hover{
+  border-bottom: 1px solid var(--main-color);
+  color: var(--main-color);
+  background: none;
+  transition: all 0.2s ease;
+}
+
+/* Product Section */
+
+.category-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-buttons .category-button{
+  background: none;
+  border: none;
+  color: #8a8a8a;
+  margin:0 5px;
+  font-size: 18px;
+}
+.category-buttons .category-button.active,
+.category-buttons .category-button:hover{
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+.slider .slick-prev:before,
+.slider .slick-next:before {
+  font-family: 'slick';
+  font-size: 25px;
+  line-height: 1;
+  opacity: .75;
+  color: rgb(0, 0, 0);
+}
+.slider .product-card:hover{
+  box-shadow: 1px 1px 5px grey;
+}
+.slider .card {
+  border-radius: 0%;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  margin: 10px 0;
+}
+.slider .product-card .new{
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  background-color: rgb(155, 181, 100);
+  text-align: center;
+  color:var(--white);
+  padding: 4px ;
+  width: 20%;
+  
+}
+.slider .product-card .top{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  background-color: rgb(91, 192, 235);
+  width: 20%;
+  text-align: center;
+  color:var(--white);
+  padding: 4px ;
+}
+.slider .product-card .title{
+  font-size: 1.3rem;
+  color: #8a8a8a;
+  font-weight: 100;
+}
+.slider .product-card .price{
+  color:var(--main-color);
+  font-size: 1.5rem;
+}
+
+.slider .product-card .btn{
+  background-color:var(--white);
+  color: black;
+  border: none;
+  margin-top: 5px;
+  margin-left: 5px;
+  transition: all 0.3s ease;
+}
+.slider .product-card .btn:hover{
+  border-radius: 5px;
+  background-color:  var(--main-color);
+  color:var(--white);
+}
+
+/* banner */
+
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  background-image: url('https://img.freepik.com/free-photo/woman-standing-misty-forest_53876-129936.jpg?t=st=1696431190~exp=1696431790~hmac=0975118d30590f3fe97c2941eee795e5bd9d9079da613aa17c1a2689054aa44e');
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow: hidden;
+}
+.banner .title{
+  display: block;
+}
+.banner .title h3 span{
+  display: block;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+.banner .title h3 strong{
+  display: inline;
+  font-size: 60px;
+}
+.banner a{
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 60px;
+  color:var(--main-color) ;
+  transition: all 0.3s ease-in-out;
+}
+.banner a:hover{
+  color:rgb(177, 88, 88) ;
+}
+
+  /* Scroll Button */
+
+#scrollButton{
+  position: fixed;
+  bottom: 90px;
+  right: 50px;
+  background-color:var(--main-color);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  z-index: 11;
+  transition: all 0.3s ease-in-out;
+}
+#scrollButton:hover{
+  background-color: rgb(230, 116, 116);
+}
+
+
+/* Special Section */
+
+.special .special-text .p1{
+  color:var(--main-color);
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.special .special-text strong{
+  font-size: 30px;
+}
+.special .special-text .p2{
+  font-size: 15px;
+  color: #b8b8b8;
+  padding: 10px 20px;
+}
+.special .cards-row{
+  padding: 0 7.6rem;
+}
+.special .card {
+  border-radius: 0%;
+  transition: all 0.3s ease-in-out;
+}
+.special .special-card:hover{
+  box-shadow: 1px 1px 5px grey;
+}
+.special .special-card .title{
+  font-size: 1rem;
+  color: #8a8a8a;
+  font-weight: 100;
+}
+.special .special-card .price{
+  color: var(--main-color);
+  font-size: 1rem;
+}
+.special .special-card .btn{
+  background-color:var(--white);
+  color: black;
+  font-size: 0.8rem;
+  border: none;
+  margin-top: 5px;
+  margin-left: 5px;
+  transition: all 0.3s ease;
+}
+.special .special-card .btn:hover{
+  border-radius: 5px;
+  background-color: var(--main-color);
+  color:var(--white);
+}
+.special-large-card .content{
+  width: 60%;
+  position:absolute;
+  top: 50%;
+  left: 8%;
+  line-height: 10px;
+  letter-spacing: -0.3px;
+}
+.special-large-card  p{
+  color:#8a8a8a;
+  padding:30px 0;
+  font-size: 20px;
+}
+.special-large-card  h3{
+  font-size: 40px;
+}
+
+.special-large-card .btn{
+  font-size: 20px;
+  font-weight: 100;
+  background:none;
+  border-radius: 20px;
+  padding: 5px 30px;
+  color: black;
+  border-color:black;
+}
+.special-large-card .btn:hover{
+  background:var(--white);
+  color:  var(--main-color);
+  border-color: transparent;
+  transition: all 0.3s ease;
+}
+
+/* Arrivals Section */
+
+.arrival .card{
+  border-radius: 0%;
+  border: none;
+}
+
+.arrival .arrival-cards .new{
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  background-color: rgb(155, 181, 100);
+  text-align: center;
+  color: var(--white);
+  padding: 4px 12px;
+}
+.arrival .arrival-cards .top{
+  position: absolute;
+  top: 11%;
+  left: 5%;
+  text-align: center;
+  color: var(--white);
+  padding:4px 13px;
+}
+.arrival .arrival-cards .tag-Sale {
+  background-color: #df6f6f; 
+}
+.arrival .arrival-cards .tag-Out_of_Stock {
+  background-color: #afafaf; 
+}
+.arrival .arrival-cards .tag-Top {
+  background-color: rgb(91, 192, 235); 
+}
+.arrival .arrival-cards{
+  transition: all 0.3s ease-in-out;
+}
+.arrival .arrival-cards:hover{
+  box-shadow: 1px 1px 5px grey;
+  transform: scale(1.01);
+}
+.arrival .arrival-cards .title{
+  font-size: 1.3rem;
+  color: #8a8a8a;
+  font-weight: 100;
+}
+.arrival .arrival-cards .price{
+  color: var(--main-color);
+  font-size: 1.5rem;
+}
+.arrival .arrival-cards .btn{
+  background-color:var(--white);
+  color: black;
+  border: none;
+  margin-top: 5px;
+  margin-left: 5px;
+  transition: all 0.3s ease;
+}
+.arrival .arrival-cards .btn:hover{
+  border-radius: 5px;
+  background-color:  var(--main-color);
+  color:var(--white);
+}
+.arrival .toggle-button{
+  background-color: var(--white);
+  padding: 5px 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-color:#b8b8b8;
+  border-radius: 50px;
+  color:  rgb(210, 88, 88);
+  transition: all 0.3s ease-in-out;
+}
+.arrival .toggle-button:hover{
+  background-color:  rgb(210, 88, 88);
+  border-color:var(--white);
+  color: var(--white);
+}
+
+/* Footer */
+
+footer h3{
+  font-size: 30px;
+  font-weight: bolder;
+  font-family:'Times New Roman', Times, serif;
+}
+footer p, footer a{
+  color: #8a8a8a;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+footer div a {
+  color:var(--main-color);
+}
+footer ul li a{
+  color: #8a8a8a;
+  text-decoration: none;
+}
+footer ul li a:hover{
+  color:var(--main-color)
+}
+
+/* Cart Component */
+
+.cart-container .bg-img{
+  height: 250px;
+  background: url('https://img.freepik.com/free-photo/plain-smooth-maroon-paper-background_53876-128606.jpg?w=1480&t=st=1696697612~exp=1696698212~hmac=0ad95746f0e8cd140241e839fccd6fbf7efbaf30ae7937161cf2db9035fa7339');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden; 
+}
+.cart-container .title{
+ margin: 8rem 0;
+}
+.cart-container .title p{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+.cart-container .crum .crum-item a{
+  text-decoration: none;
+  color:#8a8a8a; 
+}
+.cart-container .crum .crum-item a:hover{
+  color: var(--main-color);
+}
+.cart-container .content .icon{
+  font-size: 6rem;
+}
+.cart-container .content .btn{
+  border-radius: 0;
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: var(--main-color);
+  color: var(--white);
+}
+.cart-container .content .btn:hover{
+  background-color: #df6f6f;
+}
+
+.cart-container .content .cart-btn{
+  position: absolute;
+  top: 30px;
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+.cart-container .content .cart-btn:hover{
+  background-color: transparent;
+}
+
+.cart-container .content .card{
+  border-radius: 0%;
+}
+
+.cart-container .content .cart-btn .minus-btn{
+  position: absolute;
+  left: 10px;
+}
+.cart-container .content .cart-btn .plus-btn{
+  position: absolute;
+  right: 10px;
+}
+.cart-container .content .checkout-btn{
+  background-color: transparent;
+  text-decoration: none;
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  font-size: 20px;
+  color: var(--main-color);
+  border:2px solid var(--main-color);
+  padding: 5px 20px;
+  transition: all 0.3s ease-in-out;
+}
+.cart-container .content .checkout-btn:hover{
+  color: var(--white);
+  background-color: var(--main-color);
+  border-color: transparent;
+}
+
+/* Login Page */
+
+.login{
+  margin-top: 5rem;
+}
+
+
+.login .crum .crum-item a{
+  text-decoration: none;
+  color:#8a8a8a; 
+}
+.login .crum .crum-item a:hover{
+  color: var(--main-color);
+}
+.login .card-row{
+  background: url('https://img.freepik.com/free-photo/clothing-store-with-blurred-effect_23-2148164738.jpg?w=996&t=st=1697041655~exp=1697042255~hmac=25e06270d1c6240b441bbda0d177f60473cb7fb3374a47b28db661baeeacd6cd');
+  background-size: cover;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .card-row .card{
+  border-radius: 0%;
+  border: none;
+}
+.login .card-row .h-btn{
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+}
+.login .card-row .h-btn{
+  border-bottom: 2px solid var(--main-color);
+}
+.login .card-row .h-btn:hover{
+  color:var(--main-color);
+}
+.login .card-row .card .card-body{
+  color: #6d6d6d;
+}
+.login .card-row .card .card-body .form-control{
+  border-radius: 0%;
+  background-color: #eeeeee;
+  transition: all 0.2s ease-in-out;
+}
+.login .card-row .card .card-body .form-control:focus{
+  border-color:transparent;
+  box-shadow: none;
+  outline:1px solid var(--main-color); 
+  background-color: var(--white);
+}
+.login .card-row .card .card-body .form-check-input{
+  box-shadow: none;
+
+}
+.login .card-row .card .card-body .form-check-input:checked{
+  background-color: var(--main-color);
+  border-color: transparent;
+  box-shadow: none;
+}
+.login .card-row .card .card-body .btn {
+  background-color: transparent;
+  color: var(--main-color);
+  border-radius: 0%;
+  font-size: 20px;
+  padding: 5px 30px;
+  border-color: var(--main-color);
+  position: relative;
+  left: 40%;
+  transition: all 0.3s ease-in-out;
+}
+.login .card-row .card .card-body .btn:hover{
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+/* Checkout Page */
+
+.checkout-container .bg-img{
+  height: 250px;
+  background: url('https://img.freepik.com/free-photo/close-up-adult-man-holding-shopping-bags_23-2148316178.jpg?w=740&t=st=1697220554~exp=1697221154~hmac=a91e7a851ff407348795195c13c67a9b6c34d140c81ef192a6b40fc99d7a77c0');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden; 
+}
+.checkout-container .title{
+ margin: 8rem 0;
+}
+.checkout-container .title p{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+.checkout-container .crum .crum-item a{
+  text-decoration: none;
+  color:#636363; 
+}
+.checkout-container .crum .crum-item a:hover{
+  color: var(--main-color);
+}
+
+.checkout-container .content .form-label{
+  color: #737373;
+}
+
+.checkout-container .content .form-control{
+  border-radius: 0%;
+  box-shadow: none;
+  background-color: #eeeeee;
+}
+.checkout-container .content .form-control:focus{
+  border-color:transparent;
+  box-shadow: none;
+  outline:1px solid var(--main-color); 
+  background-color: var(--white);
+}
+.checkout-container .content .form-check-input{
+  box-shadow: none;
+  border-color: var(--main-color);
+}
+.checkout-container .content .card{
+  border-radius: 0%;
+}
+.checkout-container .content .form-check-input:checked{
+  background-color: var(--main-color);
+}
+.checkout-container .content a{
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 20px;
+  position: relative;
+  left: 35%;
+  /* bottom: 7%; */
+  padding: 5px 15px;
+  border: 2px solid var(--main-color);
+  transition: all.2s ease-in-out;
+}
+
+.checkout-container .content a:hover{
+  color: var(--white);
+  background-color: var(--main-color);
+
+}
+
+/* Responsiveness */
+
+@media(max-width:1300px){
+
+  /* Navbar */
+
+  .navbar .nav-link{
+    margin: 0 0px;
+    margin-left: 0px;
+  }
+
+  .special .cards-row{
+    padding: 0 6rem;
+  }
+
+}
+
+@media(max-width:1080px){
+
+  /* Navbar */
+
+  .navbar .brand{
+    font-size: 27px;
+  }
+  .navbar .nav-link{
+    margin: 0 0px;
+    margin-left: 0px;
+  }
+
+  /* Carousel */
+
+  .carousal{
+    height: 35rem;
+  }
+  .carousal img{
+    width: fit-content;
+  }
+  .caption p {
+    font-size: 25px;
+  }
+
+  .caption h1{
+    font-size: 6rem;
+  }
+
+  .caption .btn-danger{
+    font-size: 16px;
+  }
+  /* banner */
+  .banner{
+    height: 250px;
+  }
+}
+
+@media(max-width:991px){
+
+  /* Navbar */
+
+  .form .input{
+    right: 0rem;
+  }
+
+  .form .input-group .btn{
+    right: 0.7rem;
+  }
+  /* .form .input-group .btn1{
+    left: 18rem; 
+  } */
+  .form .input-group #cart-btn{
+    left: 19rem;
+  }
+
+  /* Carousel */
+
+  .carousal{
+    height: 32rem;
+  }
+  .carousal img{
+    width: fit-content;
+  }
+  .caption p {
+    font-size: 22px;
+  }
+
+  .caption h1{
+    font-size: 5rem;
+  }
+
+  .caption .btn-danger{
+    font-size: 13px;
+  }
+
+  /* Offer Section */
+
+  .offer-card  p{
+    font-size: 20px;
+  }
+  .offer-card  h3{
+    font-size: 30px;
+  }
+
+  /* banner */
+  .banner{
+    height: 200px;
+  }
+  .banner .title h3 span{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .banner .title h3 strong,
+  .banner a{
+    font-size: 40px;
+  }
+} 
+
+@media(max-width:767px){
+
+  /* Navbar */
+
+  .navbar .brand{
+    font-size: 22px;
+  }
+
+  /* Carousel */
+
+  .carousal{
+    height: 32rem;
+  }
+
+  .carousal img{
+    width: auto;
+  }
+  .caption p {
+    font-size: 20px;
+  }
+
+  .caption h1{
+    font-size: 4rem;
+  }
+
+  .caption .btn-danger{
+    font-size: 12px;
+  }
+
+  /* Offer Section */
+
+  .offer-card  p{
+    font-size: 30px;
+  }
+  .offer-card  h3{
+    font-size: 40px;
+  }
+  .offer-card .img1{
+    height: 300px;
+  }
+  /* banner */
+  .banner{
+    height: 170px;
+  }
+  .banner .title h3 span{
+    font-size: 15px;
+  }
+  .banner .title h3 strong,
+  .banner a{
+    font-size: 30px;
+  }
+  /* Scroll Button */
+
+  #scrollButton{
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media(max-width:590px){
+
+  /* Navbar */
+
+  .form .input-group .btn{
+  
+    right: 0.7rem;
+  }
+  .form .input-group .btn1{
+    left: 17.6rem; 
+  }
+  .form .input-group #cart-btn{
+    left: 19.6rem;
+  }
+
+  /* Carousel */
+
+  .carousal{
+    height: 23rem;
+  }
+
+  .caption{
+    width: 100%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-13%, -73%);
+  }
+  .carousal img{
+    width: fit-content;
+  }
+  .caption p {
+    font-size: 17px;
+  }
+
+  .caption h1{
+    font-size: 3.3rem;
+  }
+
+  .caption .btn-danger{
+    font-size: 10px;
+  }
+
+  /* Product Section */
+  .slider .slick-prev:before,
+  .slider .slick-next:before {
+    display: none;
+  }
+
+   /* Special section */
+
+   .special .cards-row{
+    padding: 0 20px;
+  } 
+
+}
+
