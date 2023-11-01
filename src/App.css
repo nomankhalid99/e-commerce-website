@@ -21,6 +21,12 @@ body{
   font-family:'Times New Roman', Times, serif;
   font-size: 30px;
 }
+.navbar .navbar-toggler{
+  border: none;
+}
+.navbar .navbar-toggler:focus{
+  box-shadow: none;
+}
 
 .navbar .nav-link{
   color: var(--white);
@@ -786,9 +792,6 @@ footer ul li a:hover{
   .carousal{
     height: 35rem;
   }
-  .carousal img{
-    width: fit-content;
-  }
   .caption p {
     font-size: 25px;
   }
@@ -817,9 +820,6 @@ footer ul li a:hover{
   .form .input-group .btn{
     right: 0.7rem;
   }
-  /* .form .input-group .btn1{
-    left: 18rem; 
-  } */
   .form .input-group #cart-btn{
     left: 19rem;
   }
@@ -828,9 +828,6 @@ footer ul li a:hover{
 
   .carousal{
     height: 32rem;
-  }
-  .carousal img{
-    width: fit-content;
   }
   .caption p {
     font-size: 22px;
@@ -879,10 +876,6 @@ footer ul li a:hover{
 
   .carousal{
     height: 32rem;
-  }
-
-  .carousal img{
-    width: auto;
   }
   .caption p {
     font-size: 20px;
@@ -973,8 +966,11 @@ footer ul li a:hover{
   }
 
   /* Product Section */
-  .slider .slick-prev:before,
-  .slider .slick-next:before {
+  .slider{
+    width: 95%;
+  }
+  .slider .slick-prev::before,
+  .slider .slick-next::before {
     display: none;
   }
 
