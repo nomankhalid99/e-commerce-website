@@ -98,8 +98,8 @@ const Cart = ({ cart: cartProp, setTotalQuantity }) => {
                 {cart.map((product) => (
                   <Card key={product.id} className="mb-3">
                     <Card.Body>
-                      <Row>
-                        <Col sm={2}>
+                      <Row className="align-items-center">
+                        <Col xs={12} sm={2}>
                           <img
                             src={product.image}
                             style={{ height: "120px" }}
@@ -107,13 +107,14 @@ const Cart = ({ cart: cartProp, setTotalQuantity }) => {
                             className="img-fluid"
                           />
                         </Col>
-                        <Col sm={3} className="d-flex align-items-center">
+                        <Col xs={12} sm={3} className="d-flex align-items-center">
                           <h5>{product.name}</h5>
                         </Col>
-                        <Col xs={2} className="d-flex fs-5 align-items-center">
+                        <Col xs={9} sm={2} className="d-flex fs-5 align-items-center">
                           <p  >${product.price}</p>
                         </Col>
                         <Col
+                          xs={6}
                           sm={2}
                           className="d-flex justify-content-center align-items-center"
                         >
@@ -136,11 +137,11 @@ const Cart = ({ cart: cartProp, setTotalQuantity }) => {
                             </span>
                           </Button>
                         </Col>
-                        <Col xs={2} className="d-flex fs-5 align-items-center">
+                        <Col xs={12} sm={2} className="d-flex fs-5 align-items-center">
                         <p style={{color:'rgb(210, 88, 88)'}}>${(product.price * (product.quantity || 1)).toFixed(2)}</p>
                         </Col>
                         <Col
-                          sm={1}
+                          xs={12} sm={1}
                           className="d-flex justify-content-center align-items-center"
                         >
                           <Button
