@@ -81,7 +81,7 @@ const Cart = ({ cart: cartProp, setTotalQuantity }) => {
           {cart.length > 0 ? (
             <Col sm={12} md={8}>
               <div>
-                <Row>
+                <Row className="labels">
                   <Col sm={5} className="d-flex ps-5 align-items-center">
                     <p>Product</p>
                   </Col>
@@ -120,7 +120,7 @@ const Cart = ({ cart: cartProp, setTotalQuantity }) => {
                         >
                           <Button
                             variant="primary"
-                            className="cart-btn"
+                            className="cart-btn increment-btn"
                           >
                             <span
                               className="minus-btn"
@@ -146,7 +146,7 @@ const Cart = ({ cart: cartProp, setTotalQuantity }) => {
                         >
                           <Button
                             variant="danger"
-                            className="cart-btn"
+                            className="cart-btn cancel-btn"
                             onClick={() => removeFromCart(product.id)}
                           >
                             <FontAwesomeIcon icon={faTimes} />

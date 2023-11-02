@@ -577,7 +577,7 @@ footer ul li a:hover{
   position: absolute;
   top: 30px;
   background-color: transparent;
-  color: black;
+  color: var(--main-color);
   border: none;
 }
 .cart-container .content .cart-btn:hover{
@@ -934,7 +934,7 @@ footer ul li a:hover{
     left: 17.6rem; 
   }
   .form .input-group #cart-btn{
-    left: 19.6rem;
+    left: 18.8rem;
   }
 
   /* Carousel */
@@ -980,5 +980,21 @@ footer ul li a:hover{
     padding: 0 20px;
   } 
 
+  .cart-container .content .cancel-btn{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    margin-top: 0%;
+    padding: 0%;
+  }
+  .cart-container .content .increment-btn{
+    position: absolute;
+    top: 110px;
+    right: 20px;
+
+  }
+  .cart-container .content .labels{
+    display: none;
+  }
 }
 
