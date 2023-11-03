@@ -8,6 +8,7 @@ import Cart from './pages/Cart';
 import Footer from './components/Footer';
 import Login from './pages/Login';
 import Checkout from './pages/Checkout';
+import Contact from './pages/Contact';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/cart" element={<Cart cart={cart} setTotalQuantity={setTotalQuantity}/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/checkout" element={<Checkout cart={cart}/>}/>
+          {/* <Route path="/contact" element={<Contact/>}/> */}
         </Routes>
       </Router>
       <Footer/>
