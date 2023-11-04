@@ -201,7 +201,7 @@ const Contact = () => {
         <Grid container className="card-container" marginBottom={10} marginTop={3} spacing={2}>
           {offices.map((office) => (
             <Grid item key={office.id} xs={12} sm={6}>
-              <Card>
+              <Card className='card'>
                 <Grid container>
                   <Grid item xs={12} md={6}>
                     <CardMedia

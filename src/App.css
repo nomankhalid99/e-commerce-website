@@ -820,19 +820,19 @@ footer ul li a:hover{
   margin: 20px 0;
 }
 
-.contact-container .card-container .css-bhp9pd-MuiPaper-root-MuiCard-root {
+.contact-container .card-container .card {
   border-radius: 0%;
   box-shadow: none;
 }
 
-.contact-container .card-container .css-bhp9pd-MuiPaper-root-MuiCard-root button{
+.contact-container .card-container .card button{
   border: none;
   padding: 0%;
   margin-top: 40px;
   border-radius: 0%;
   color: var(--main-color);
 }
-.contact-container .card-container .css-bhp9pd-MuiPaper-root-MuiCard-root button:hover{
+.contact-container .card-container .card button:hover{
   transition: all 0.3s ease-in-out;
   background-color: var(--white);
   border-bottom: 1px solid var(--main-color);
