@@ -40,7 +40,7 @@ function App() {
           <Route path="/cart" element={<Cart cart={cart} setTotalQuantity={setTotalQuantity}/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/checkout" element={<Checkout cart={cart}/>}/>
-          {/* <Route path="/contact" element={<Contact/>}/> */}
+          <Route path="/contact" element={<Contact/>}/>
         </Routes>
       </Router>
       <Footer/>
