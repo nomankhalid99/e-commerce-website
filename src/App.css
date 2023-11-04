@@ -820,9 +820,10 @@ footer ul li a:hover{
   margin: 20px 0;
 }
 
-.contact-container .card-container .card {
+.contact-container .card-container .card{
   border-radius: 0%;
   box-shadow: none;
+  border: none;
 }
 
 .contact-container .card-container .card button{
