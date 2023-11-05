@@ -7,17 +7,17 @@ import ScrollTopButton from '../components/ScrollTopButton';
 import Special from '../components/Special';
 import NewArrivals from '../components/NewArrivals';
 
-const Home = ({cart, setCart,}) => {
+const Home = ({cart,products, setCart,}) => {
   console.log(cart)
 
   return (
     <>    
      <Carousal/>
         <Offers/>
-     <ProductList cart={cart} setCart={setCart} />
+     <ProductList cart={cart} products={products} setCart={setCart} />
         <Banner/>
-      <Special cart={cart} setCart={setCart}  />
-      <NewArrivals cart={cart} setCart={setCart} />
+      <Special cart={cart} products={products} setCart={setCart}  />
+      <NewArrivals cart={cart} products={products} setCart={setCart} />
       <ScrollTopButton/>
     </>
    

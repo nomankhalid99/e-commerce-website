@@ -843,6 +843,32 @@ footer ul li a:hover{
   border-bottom: 1px solid var(--main-color);
 }
 
+/* Product Detail page */
+
+.detail-container .product-info .price{
+  color: var(--main-color);
+}
+.detail-container .product-info .incrmnt-btn svg{
+  font-size: 15px;
+  margin: 0 10px;
+  color: var(--main-color);
+}
+.detail-container .product-info .atc-btn{
+  background-color: var(--white);
+  color: var(--main-color);
+  box-shadow: none;
+  border-radius: 0%;
+  border: 1px solid var(--main-color);
+  margin: 15px 0px;
+  padding: 5px 30px;
+  transition: all 0.3s ease-in-out;
+}
+.detail-container .product-info .atc-btn:hover{
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+
 /* Responsiveness */
 
 @media(max-width:1300px){
