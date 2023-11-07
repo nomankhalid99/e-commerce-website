@@ -14,7 +14,7 @@ const Carousal = () => {
                 <p>Don't Miss</p>
                 <h1>Mysterous Deals</h1>
                 <p>Online Only</p>
-                <a href="#" className="btn btn-danger text-uppercase mt-5">Order Now</a>
+                <a href="#" onClick={(e)=>e.preventDefault()} className="btn btn-danger text-uppercase mt-5">Order Now</a>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -27,7 +27,7 @@ const Carousal = () => {
                 <p>Limited time Only</p>
                 <h1>Treat your self</h1>
                 <p>Upto 50% off</p>
-                <a href="#" className="btn btn-danger text-uppercase mt-5">Shop Now</a>
+                <a href="#" onClick={(e)=>e.preventDefault()} className="btn btn-danger text-uppercase mt-5">Shop Now</a>
             </Carousel.Caption>
         </Carousel.Item>
     </Carousel>

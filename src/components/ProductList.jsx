@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import {Link} from 'react-router-dom';
+
 
 const ProductList = ({cart,products, setCart}) => {
   console.log(cart)
@@ -85,8 +87,8 @@ const ProductList = ({cart,products, setCart}) => {
             {filteredProducts.map((product) => (
               <div key={product.id} className="px-2">
                 <Card className="product-card">
-                  <Card.Link
-                    href="#"
+                  <Link
+                    to={`/product/${product.id}`}
                     className="text-decoration-none text-black"
                   >
                     <span className="mb-1 d-block new">New</span>
@@ -106,7 +108,7 @@ const ProductList = ({cart,products, setCart}) => {
                     >
                       Add to Cart
                     </Button>
-                  </Card.Link>
+                  </Link>
                   <Card.Body>
                     <Card.Title className="title">{product.name}</Card.Title>
                     <Card.Text className="price">${product.price}</Card.Text>
