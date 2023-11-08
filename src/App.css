@@ -1,23 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
-
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
 :root {
   --main-color: rgb(210, 88, 88);
   --white: #fff;
 }
-
 /* Navbar */
 .navbar {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-transform: uppercase;
 }
-
 .navbar .brand {
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
@@ -55,7 +51,6 @@ body {
   color: var(--main-color);
   border-bottom: 1px solid var(--main-color);
 }
-
 .form .input {
   position: absolute;
   right: 5rem;
@@ -111,9 +106,7 @@ body {
 .form .input-group .btn:hover {
   color: var(--main-color);
 }
-
 /* Carousel */
-
 .carousal {
   height: 100vh;
 }
@@ -155,16 +148,13 @@ body {
   padding: 5px 30px;
   border-color: var(--white);
 }
-
 .caption .btn-danger:hover {
   background: var(--white);
   color: var(--main-color);
   border: none;
   transition: all 0.3s ease;
 }
-
 /* Offer Section */
-
 .offer-card .content {
   width: 70%;
   position: absolute;
@@ -200,22 +190,18 @@ body {
   margin-top: 10px;
   font-size: 20px;
 }
-
 .offer-card .btn:hover {
   border-bottom: 1px solid var(--main-color);
   color: var(--main-color);
   background: none;
   transition: all 0.2s ease;
 }
-
 /* Product Section */
-
 .category-buttons {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .category-buttons .category-button {
   background: none;
   border: none;
@@ -228,7 +214,6 @@ body {
   color: var(--main-color);
   border-bottom: 1px solid var(--main-color);
 }
-
 .slider .slick-prev:before,
 .slider .slick-next:before {
   font-family: "slick";
@@ -275,7 +260,6 @@ body {
   color: var(--main-color);
   font-size: 1.5rem;
 }
-
 .slider .product-card .btn {
   background-color: var(--white);
   color: black;
@@ -289,9 +273,7 @@ body {
   background-color: var(--main-color);
   color: var(--white);
 }
-
 /* banner */
-
 .banner {
   display: flex;
   justify-content: center;
@@ -325,9 +307,7 @@ body {
 .banner a:hover {
   color: rgb(177, 88, 88);
 }
-
 /* Scroll Button */
-
 #scrollButton {
   position: fixed;
   bottom: 90px;
@@ -345,9 +325,7 @@ body {
 #scrollButton:hover {
   background-color: rgb(230, 116, 116);
 }
-
 /* Special Section */
-
 .special .special-text .p1 {
   color: var(--main-color);
   font-size: 20px;
@@ -410,7 +388,6 @@ body {
 .special-large-card h3 {
   font-size: 40px;
 }
-
 .special-large-card .btn {
   font-size: 20px;
   font-weight: 100;
@@ -426,14 +403,11 @@ body {
   border-color: transparent;
   transition: all 0.3s ease;
 }
-
 /* Arrivals Section */
-
 .arrival .card {
   border-radius: 0%;
   border: none;
 }
-
 .arrival .arrival-cards .new {
   position: absolute;
   top: 3%;
@@ -504,9 +478,7 @@ body {
   border-color: var(--white);
   color: var(--white);
 }
-
 /* Footer */
-
 footer h3 {
   font-size: 30px;
   font-weight: bolder;
@@ -528,9 +500,7 @@ footer ul li a {
 footer ul li a:hover {
   color: var(--main-color);
 }
-
 /* Cart Component */
-
 .cart-container .bg-img {
   height: 250px;
   background: url("https://img.freepik.com/free-photo/plain-smooth-maroon-paper-background_53876-128606.jpg?w=1480&t=st=1696697612~exp=1696698212~hmac=0ad95746f0e8cd140241e839fccd6fbf7efbaf30ae7937161cf2db9035fa7339");
@@ -566,7 +536,6 @@ footer ul li a:hover {
 .cart-container .content .btn:hover {
   background-color: #df6f6f;
 }
-
 .cart-container .content .cart-btn {
   position: absolute;
   top: 30px;
@@ -577,11 +546,9 @@ footer ul li a:hover {
 .cart-container .content .cart-btn:hover {
   background-color: transparent;
 }
-
 .cart-container .content .card {
   border-radius: 0%;
 }
-
 .cart-container .content .cart-btn .minus-btn {
   position: absolute;
   left: 10px;
@@ -607,13 +574,10 @@ footer ul li a:hover {
   background-color: var(--main-color);
   border-color: transparent;
 }
-
 /* Login Page */
-
 .login {
   margin-top: 5rem;
 }
-
 .login .crum .crum-item a {
   text-decoration: none;
   color: #8a8a8a;
@@ -681,9 +645,7 @@ footer ul li a:hover {
   background-color: var(--main-color);
   color: var(--white);
 }
-
 /* Checkout Page */
-
 .checkout-container .bg-img {
   height: 250px;
   background: url("https://img.freepik.com/free-photo/close-up-adult-man-holding-shopping-bags_23-2148316178.jpg?w=740&t=st=1697220554~exp=1697221154~hmac=a91e7a851ff407348795195c13c67a9b6c34d140c81ef192a6b40fc99d7a77c0");
@@ -706,11 +668,9 @@ footer ul li a:hover {
 .checkout-container .crum .crum-item a:hover {
   color: var(--main-color);
 }
-
 .checkout-container .content .form-label {
   color: #737373;
 }
-
 .checkout-container .content .form-control {
   border-radius: 0%;
   box-shadow: none;
@@ -742,14 +702,11 @@ footer ul li a:hover {
   border: 2px solid var(--main-color);
   transition: all.2s ease-in-out;
 }
-
 .checkout-container .content a:hover {
   color: var(--white);
   background-color: var(--main-color);
 }
-
 /* Contact Page */
-
 .contact-container .bg-img {
   background: url("https://img.freepik.com/free-photo/top-view-desk-concept-with-coffee_23-2148604923.jpg?w=740&t=st=1699016112~exp=1699016712~hmac=f7cf57bfd97fe4e00564659007b25bee6e317f36a9bb4d65a7c3bcadb28f5408");
   background-size: cover;
@@ -769,7 +726,6 @@ span {
   color: #636363;
   text-decoration: none;
 }
-
 .contact-container .office-info p svg {
   color: var(--main-color);
   margin-right: 10px;
@@ -789,7 +745,6 @@ span {
   border: 1px solid var(--main-color);
   background-color: var(--white);
 }
-
 .contact-container .contact-form form button {
   text-align: center;
   border-radius: 0%;
@@ -801,7 +756,6 @@ span {
   color: var(--white);
   background-color: var(--main-color);
 }
-
 .contact-container .contact-form form button svg {
   font-size: 17px;
   margin-left: 7px;
@@ -809,7 +763,6 @@ span {
 .contact-container #google-map {
   margin: 20px 0;
 }
-
 .contact-container .card-container .card {
   border-radius: 0%;
   box-shadow: none;
@@ -832,9 +785,25 @@ span {
   background-color: var(--white);
   border-bottom: 1px solid var(--main-color);
 }
-
 /* Product Detail page */
-
+.detail-container .crum a{
+  text-decoration: none;
+  color: #636363;
+}
+.detail-container .crum a:hover{
+  color: var(--main-color);
+}
+.detail-container .main-img-container {
+  width: 100%;
+  height: 510px;
+  overflow: hidden;
+  position: relative;
+}
+.detail-container .main-img-container .main-img {
+  width: 100%;
+  height: 100%;
+  cursor:move;
+}
 .detail-container .product-info .price {
   color: var(--main-color);
 }
@@ -853,6 +822,10 @@ span {
   padding: 5px 30px;
   transition: all 0.3s ease-in-out;
 }
+.detail-container .product-info .atc-btn svg{
+  font-size: 18px;
+  margin-right: 10px;
+}
 .detail-container .product-info .atc-btn:hover {
   background-color: var(--main-color);
   color: var(--white);
@@ -865,24 +838,92 @@ span {
   color: var(--main-color);
   border-bottom: 2px solid var(--main-color);
 }
+.detail-container .main-img-container .new {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  background-color: rgb(155, 181, 100);
+  text-align: center;
+  color: var(--white);
+  padding: 4px 12px;
+  z-index: 1;
+}
+.detail-container .main-img-container .top {
+  position: absolute;
+  top: 11%;
+  left: 5%;
+  text-align: center;
+  color: var(--white);
+  padding: 4px 13px;
+  z-index: 1;
+}
+.detail-container .main-img-container .tag-Sale {
+  background-color: #df6f6f;
+}
+.detail-container .main-img-container .tag-Out_of_Stock {
+  background-color: #afafaf;
+}
+.detail-container .main-img-container .tag-Top {
+  background-color: rgb(91, 192, 235);
+}
+.detail-container .slider .slick-prev:before,
+.detail-container .slider .slick-next:before {
+font-family: "slick";
+font-size: 25px;
+line-height: 1;
+opacity: 0.75;
+  color: rgb(0, 0, 0);
+}
+.detail-container .slider .product-card {
+  border-radius: 0%;
+  border: none;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: none;
+}
+.detail-container .slider .product-card:hover {
+  box-shadow: 1px 1px 5px grey;
+}
+.detail-container .slider .product-card .title {
+  font-size: 1.3rem;
+  color: #8a8a8a;
+  font-weight: 100;
+}
+.detail-container .slider .product-card .price {
+  color: var(--main-color);
+  font-size: 1.5rem;
+}
+.detail-container .slider .product-card .btn {
+  background-color: var(--white);
+  color: black;
+  border: none;
+  margin-top: 5px;
+  margin-left: 5px;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+.detail-container .slider .product-card .btn svg{
+  font-size: 18px;
+  margin-right: 10px;
+}
+.detail-container .slider .product-card .btn:hover {
+  border-radius: 5px;
+  background-color: var(--main-color);
+  color: var(--white);
+}
 /* Responsiveness */
-
 @media (max-width: 1300px) {
   /* Navbar */
-
   .navbar .nav-link {
     margin: 0 0px;
     margin-left: 0px;
   }
-
   .special .cards-row {
     padding: 0 6rem;
   }
 }
-
 @media (max-width: 1080px) {
   /* Navbar */
-
   .navbar .brand {
     font-size: 27px;
   }
@@ -890,20 +931,16 @@ span {
     margin: 0 0px;
     margin-left: 0px;
   }
-
   /* Carousel */
-
   .carousal {
     height: 100vh;
   }
   .caption p {
     font-size: 25px;
   }
-
   .caption h1 {
     font-size: 6rem;
   }
-
   .caption .btn-danger {
     font-size: 16px;
   }
@@ -912,14 +949,11 @@ span {
     height: 250px;
   }
 }
-
 @media (max-width: 991px) {
   /* Navbar */
-
   .form .input {
     right: 0rem;
   }
-
   .form .input-group .btn {
     right: 0.7rem;
   }
@@ -938,9 +972,7 @@ span {
     margin-left: 20px;
     color: var(--white);
   }
-
   /* Carousel */
-
   .carousal {
     height: 100vh;
   }
@@ -960,7 +992,6 @@ span {
   .caption .btn-danger {
     font-size: 20px;
   }
-
   /* Offer Section */
 
   .offer-card p {
@@ -983,16 +1014,12 @@ span {
     font-size: 40px;
   }
 }
-
 @media (max-width: 767px) {
   /* Navbar */
-
   .navbar .brand {
     font-size: 22px;
   }
-
   /* Carousel */
-
   .carousal {
     height: 100vh;
   }
@@ -1012,7 +1039,6 @@ span {
   .caption .btn-danger {
     font-size: 20px;
   }
-
   /* Offer Section */
   .offer-card .content {
     position: absolute;
@@ -1040,7 +1066,6 @@ span {
     font-size: 30px;
   }
   /* Scroll Button */
-
   #scrollButton {
     bottom: 30px;
     right: 30px;
@@ -1049,7 +1074,6 @@ span {
     font-size: 20px;
   }
 }
-
 @media (max-width: 590px) {
   /* Navbar */
 
@@ -1065,9 +1089,7 @@ span {
   .form .input-group {
     width: 250px;
   }
-
   /* Carousel */
-
   .carousal {
     height: 100vh;
   }
@@ -1119,13 +1141,10 @@ span {
   .slider .slick-next::before {
     display: none;
   }
-
   /* Special section */
-
   .special .cards-row {
     padding: 0 20px;
   }
-
   .cart-container .content .cancel-btn {
     position: absolute;
     top: 10px;

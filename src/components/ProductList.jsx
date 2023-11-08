@@ -3,17 +3,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
+const ProductList = ({ cart, products, setCart }) => {
+  console.log(cart);
 
-const ProductList = ({cart,products, setCart}) => {
-  console.log(cart)
-
-  const sliderProducts = products.filter((product) => product.id >= 15 && product.id <= 19);
- 
+  const sliderProducts = products.filter(
+    (product) => product.id >= 15 && product.id <= 19
+  );
 
   const [selectedCategory, setSelectedCategory] = useState("All");
-
 
   const settings = {
     slidesToShow: 4,
@@ -39,14 +38,16 @@ const ProductList = ({cart,products, setCart}) => {
   };
 
   const addToCart = (product) => {
-    setCart([...cart, product ])
+    setCart([...cart, product]);
     console.log(cart);
-  }
+  };
 
   const filteredProducts =
     selectedCategory === "All"
       ? sliderProducts
-      : sliderProducts.filter((product) => product.category === selectedCategory);
+      : sliderProducts.filter(
+          (product) => product.category === selectedCategory
+        );
 
   return (
     <Container>
@@ -91,20 +92,21 @@ const ProductList = ({cart,products, setCart}) => {
                     to={`/product/${product.id}`}
                     className="text-decoration-none text-black"
                   >
-                    <span className="mb-1 d-block new">New</span>
-                    <span className="d-block top">Top</span>
+                    <span className="mb-1 d-block new">{product.new}</span>
+                    <span className="d-block top">{product.tag}</span>
                     <Card.Img
                       className="img"
                       style={{ height: "350px" }}
                       variant="top"
                       src={product.image}
                     />
-                    <Button variant="primary" 
-                    className="btn"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      addToCart(product);
-                    }}
+                    <Button
+                      variant="primary"
+                      className="btn"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        addToCart(product);
+                      }}
                     >
                       Add to Cart
                     </Button>

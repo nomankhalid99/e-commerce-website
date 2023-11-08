@@ -1,30 +1,28 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-const NewArrivals = ({cart,products, setCart}) => {
- 
-
+const NewArrivals = ({ cart, products, setCart }) => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [showMore,setShowMOre] = useState(false)
+  const [showMore, setShowMOre] = useState(false);
 
   const filteredProducts =
-  selectedCategory === "All"
-    ? products
-    : products
-        .filter((product) => product.category === selectedCategory)
+    selectedCategory === "All"
+      ? products
+      : products.filter((product) => product.category === selectedCategory);
 
-  const displayedProducts = showMore ? filteredProducts : filteredProducts.slice(0 , 8);
+  const displayedProducts = showMore
+    ? filteredProducts
+    : filteredProducts.slice(0, 8);
 
-  const toggleShowMore = () =>{
+  const toggleShowMore = () => {
     setShowMOre(!showMore);
   };
 
   const addToCart = (product) => {
-    setCart([...cart, product ])
+    setCart([...cart, product]);
     console.log(cart);
-  }
-
+  };
 
   return (
     <Container className="arrival">
@@ -33,47 +31,57 @@ const NewArrivals = ({cart,products, setCart}) => {
           <h1 className="text-center fs-2 mb-4">New Arrivals</h1>
         </div>
         <div className="category-buttons mb-4">
-            <button
-              className={`category-button ${
-                selectedCategory === "All" ? "active" : ""
-              }`}
-              onClick={() => setSelectedCategory("All")}
-            >
-              {" "}
-              All
-            </button>
-            <button
-              className={`category-button ${
-                selectedCategory === "Clothing" ? "active" : ""
-              }`}
-              onClick={() => setSelectedCategory("Clothing")}
-            >
-              Clothing
-            </button>
-            <button
-              className={`category-button ${
-                selectedCategory === "Bag" ? "active" : ""
-              }`}
-              onClick={() => setSelectedCategory("Bag")}
-            >
-              Bag
-            </button>
-            <button
-              className={`category-button ${
-                selectedCategory === "Shoes" ? "active" : ""
-              }`}
-              onClick={() => setSelectedCategory("Shoes")}
-            >
-              Shoes
-            </button>
-          </div>
+          <button
+            className={`category-button ${
+              selectedCategory === "All" ? "active" : ""
+            }`}
+            onClick={() => setSelectedCategory("All")}
+          >
+            {" "}
+            All
+          </button>
+          <button
+            className={`category-button ${
+              selectedCategory === "Clothing" ? "active" : ""
+            }`}
+            onClick={() => setSelectedCategory("Clothing")}
+          >
+            Clothing
+          </button>
+          <button
+            className={`category-button ${
+              selectedCategory === "Bag" ? "active" : ""
+            }`}
+            onClick={() => setSelectedCategory("Bag")}
+          >
+            Bag
+          </button>
+          <button
+            className={`category-button ${
+              selectedCategory === "Shoes" ? "active" : ""
+            }`}
+            onClick={() => setSelectedCategory("Shoes")}
+          >
+            Shoes
+          </button>
+        </div>
         {displayedProducts.map((product) => (
           <Col key={product.id} lg={3} md={4} sm={6} className="mb-4">
             <Card className="arrival-cards">
-              <Link to={`/product/${product.id}`} className="text-decoration-none text-black">
-              <span className="mb-1 d-flex new">New</span>
-              {product.tag && (
-                  <span  className={`mb-1 d-flex top tag-${product.tag.replace(/\s+/g, '_')}`}>{product.tag}</span>
+              <Link
+                to={`/product/${product.id}`}
+                className="text-decoration-none text-black"
+              >
+                <span className="mb-1 d-flex new">{product.new}</span>
+                {product.tag && (
+                  <span
+                    className={`mb-1 d-flex top tag-${product.tag.replace(
+                      /\s+/g,
+                      "_"
+                    )}`}
+                  >
+                    {product.tag}
+                  </span>
                 )}
                 <Card.Img
                   className="img"
@@ -81,15 +89,16 @@ const NewArrivals = ({cart,products, setCart}) => {
                   variant="top"
                   src={product.image}
                 />
-                <Button variant="primary" 
-                    className="btn"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      addToCart(product);
-                    }}
-                    >
-                      Add to Cart
-                    </Button>
+                <Button
+                  variant="primary"
+                  className="btn"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    addToCart(product);
+                  }}
+                >
+                  Add to Cart
+                </Button>
               </Link>
               <Card.Body>
                 <Card.Title className="title">{product.name}</Card.Title>
@@ -103,12 +112,20 @@ const NewArrivals = ({cart,products, setCart}) => {
         <Row className="mb-5">
           <Col className="text-center">
             {showMore ? (
-              <Button variant="secondary" className="toggle-button" onClick={toggleShowMore}>
-                  Show Less
+              <Button
+                variant="secondary"
+                className="toggle-button"
+                onClick={toggleShowMore}
+              >
+                Show Less
               </Button>
-            ): (
-              <Button variant="primary" className="toggle-button" onClick={toggleShowMore}>
-                  Show More
+            ) : (
+              <Button
+                variant="primary"
+                className="toggle-button"
+                onClick={toggleShowMore}
+              >
+                Show More
               </Button>
             )}
           </Col>
