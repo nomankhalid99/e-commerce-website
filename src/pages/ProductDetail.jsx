@@ -26,23 +26,40 @@ const ProductDetail = ({ products, cart, setCart }) => {
   const [sliderProducts, setSliderProducts] = useState([]);
   const { id } = useParams();
 
+  const product = products.find((product) => product.id === Number(id));
+
+
   useEffect(() => {
-    const selectRandomProducts = (products, count) => {
-      const shuffled = products.sort(() => 0.5 - Math.random());
-      return shuffled.slice(0, count);
+    const selectCategoryProducts = (products, currentProduct) => {
+      const category = currentProduct.category;
+      const categoryProducts = products.filter(
+        (product) =>
+          product.category === category && product.id !== currentProduct.id
+      );
+
+      const uniqueProducts = Array.from(
+        new Set(categoryProducts.map((product) => product.id))
+      ).map((id) => {
+        return categoryProducts.find((product) => product.id === id);
+      });
+
+      if (uniqueProducts.length <= 5) {
+        return uniqueProducts.concat(uniqueProducts);
+      }
+
+      return uniqueProducts.slice(0, 5); 
     };
 
-    const randomProducts = selectRandomProducts(products, 5);
-    setSliderProducts(randomProducts);
-  }, [products]);
-
- 
+    const product = products.find((product) => product.id === Number(id));
+    const categoryProducts = selectCategoryProducts(products, product);
+    setSliderProducts(categoryProducts);
+  }, [products, id]);
+  
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const product = products.find((product) => product.id === Number(id));
 
   const [mainImage, setMainImage] = useState(product.image);
 
@@ -56,7 +73,7 @@ const ProductDetail = ({ products, cart, setCart }) => {
     }
   };
 
-  if (!product) {
+  if (!sliderProducts) {
     return <div>Product not found</div>;
   }
 

@@ -822,6 +822,9 @@ span {
   padding: 5px 30px;
   transition: all 0.3s ease-in-out;
 }
+.detail-container .product-info .rating span{
+  color: rgb(255, 196, 0);
+}
 .detail-container .product-info .atc-btn svg{
   font-size: 18px;
   margin-right: 10px;
@@ -911,6 +914,88 @@ opacity: 0.75;
   background-color: var(--main-color);
   color: var(--white);
 }
+
+/* Shop page */
+
+.shop-container .bg-img {
+  height: 250px;
+  background: url("https://img.freepik.com/free-photo/plain-smooth-maroon-paper-background_53876-128606.jpg?w=1480&t=st=1696697612~exp=1696698212~hmac=0ad95746f0e8cd140241e839fccd6fbf7efbaf30ae7937161cf2db9035fa7339");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
+.shop-container .title {
+  margin: 8rem 0;
+}
+.shop-container .title p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+.shop-container .crum a{
+  text-decoration: none;
+  color: #636363;
+}
+.shop-container .crum a:hover{
+  color: var(--main-color);
+}
+
+.shop-container .card{
+  box-shadow: none;
+  border: none;
+}
+.shop-container .card .img{
+  object-fit: contain;
+  height: 150px;
+}
+.shop-container .card .price{
+  color: var(--main-color);
+  margin-left: 5px;
+}
+.shop-container .card .atc-btn{
+  color: var(--main-color);
+  border-radius: 0%;
+  border: 1px solid var(--main-color);
+  box-shadow: none;
+  background-color: var(--white);
+}
+.shop-container .card .atc-btn svg{
+  margin-right: 5px;
+  font-size: 16px;
+}
+.shop-container .rating span{
+  color: rgb(255, 196, 0);
+}
+.shop-container div ul li .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
+  color: var(--main-color);
+  font-size: 20px;
+  box-shadow: none;
+}
+.shop-container div ul li button{
+  color: var(--main-color);
+}
+.shop-container div ul li button:hover{
+  background-color: var(--white);
+}
+.shop-container div ul li .css-eg0mwd-MuiSlider-thumb{
+  color: var(--white);
+  box-shadow: none;
+  border: 1px solid black;
+}
+.shop-container div ul li .MuiSlider-valueLabelOpen.css-nnid7-MuiSlider-valueLabel{
+  background-color: var(--main-color);
+  color: var(--white);
+}
+.shop-container div ul li .css-nnid7-MuiSlider-valueLabel span{
+  color: var(--white);
+}
+.shop-container div ul li .css-r93niq-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+  color: var(--white);
+  border: none;
+  background-color: var(--main-color);
+}
+
+
 /* Responsiveness */
 @media (max-width: 1300px) {
   /* Navbar */

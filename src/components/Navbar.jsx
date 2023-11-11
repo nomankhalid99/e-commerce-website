@@ -67,7 +67,7 @@ const Navigation = ({cart,totalQuantity}) => {
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <Nav.Link href="#" className="nav-link">
+            <Nav.Link href="/shop" className="nav-link">
               Shop
             </Nav.Link>
           </Nav>

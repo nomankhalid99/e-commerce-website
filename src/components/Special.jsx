@@ -11,7 +11,7 @@ const addToCart = (product) => {
   console.log(cart);
 }
 
-const specialProducts = products.filter((product) => product.id === 13 || product.id === 14);
+const specialProducts = products.filter((product) => product.id === 6 || product.id === 7);
 
   return (
     <Container className='special'>

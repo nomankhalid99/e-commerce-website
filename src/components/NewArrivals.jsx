@@ -6,14 +6,22 @@ const NewArrivals = ({ cart, products, setCart }) => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [showMore, setShowMOre] = useState(false);
 
-  const filteredProducts =
-    selectedCategory === "All"
-      ? products
-      : products.filter((product) => product.category === selectedCategory);
+  const filterProductsInRange = (products) => {
+    return products.filter((product) => product.id >= 1 && product.id <= 12);
+  };
+
+  const allProducts = filterProductsInRange(products);
+
+  const filteredProducts = selectedCategory === "All"
+    ? allProducts
+    : allProducts.filter((product) => product.category === selectedCategory);
 
   const displayedProducts = showMore
     ? filteredProducts
     : filteredProducts.slice(0, 8);
+
+
+    const specialProducts = products.filter((product) => product.id === 13 || product.id === 14);
 
   const toggleShowMore = () => {
     setShowMOre(!showMore);
