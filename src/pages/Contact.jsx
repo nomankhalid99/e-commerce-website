@@ -78,7 +78,7 @@ const Contact = () => {
           className="fixed-top bg-black"
           style={{ height: "75px", zIndex: "1" }}
         ></div>
-        <Breadcrumbs marginTop={11} marginBottom={2} aria-label="breadcrumb">
+        <Breadcrumbs className="crum" marginTop={11} marginBottom={2} aria-label="breadcrumb">
           <Link underline="none" color="inherit" href="/">
             Home
           </Link>

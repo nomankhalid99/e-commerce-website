@@ -48,28 +48,28 @@ const Navigation = ({cart,totalQuantity}) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto m-2">
-            <Nav.Link href="/" className="nav-link">
+            <Link to="/" className="nav-link">
               Home
-            </Nav.Link>
-            <Nav.Link href="#" className="nav-link">
+            </Link>
+            <Link to="#" className="nav-link">
               Products
-            </Nav.Link>
+            </Link>
             <Dropdown className="nav-item">
               <Dropdown.Toggle as={CustomToggle} id="products-dropdown">
                 Pages
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="/login" className="nav-link">
+                <Link to="/login" className="nav-link">
                   Login
-                </Dropdown.Item>
-                <Dropdown.Item href="/contact" className="nav-link">
+                </Link>
+                <Link to="/contact" className="nav-link">
                   Contact us
-                </Dropdown.Item>
+                </Link>
               </Dropdown.Menu>
             </Dropdown>
-            <Nav.Link href="/shop" className="nav-link">
+            <Link to="/shop" className="nav-link">
               Shop
-            </Nav.Link>
+            </Link>
           </Nav>
           <div className="d-flex ms-auto form">
             <Form inline>
@@ -81,7 +81,7 @@ const Navigation = ({cart,totalQuantity}) => {
                 aria-label="Search"
                 aria-describedby="search-icon"
               /> 
-              <Button className="btn d-flex" type="submit"><FontAwesomeIcon icon={faSearch} /></Button>
+              <Link><Button className="btn d-flex" type="submit"><FontAwesomeIcon icon={faSearch} /></Button></Link>
               <Link to="./cart" className="d-flex" id="cart-btn">
                 <FontAwesomeIcon icon={faCartShopping} />
                   <span>{totalQuantity}</span>

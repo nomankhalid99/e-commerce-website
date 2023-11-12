@@ -31,17 +31,22 @@ body {
   margin: 0 6px;
   margin-left: 20px;
 }
+.navbar .nav-link .active{
+  color: var(--main-color);
+}
 .navbar .dropdown-menu {
   background-color: var(--white);
   border-radius: 0%;
   overflow: hidden;
 }
-.navbar .dropdown-menu .dropdown-item {
+.navbar .dropdown-menu a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 15px;
   text-transform: capitalize;
   color: #6d6d6d;
 }
-.navbar .dropdown-menu .dropdown-item:hover {
+.navbar .dropdown-menu a:hover {
   background-color: var(--white);
   color: var(--main-color);
   border-bottom: none;
@@ -721,6 +726,9 @@ footer ul li a:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
 }
+.contact-container .crum a:hover{
+  color: var(--main-color);
+}
 .contact-container .office-info p,
 span {
   color: #636363;
@@ -939,7 +947,10 @@ opacity: 0.75;
 .shop-container .crum a:hover{
   color: var(--main-color);
 }
-
+.shop-container .filters{
+  position: sticky;
+  top: 70px;
+}
 .shop-container .card{
   box-shadow: none;
   border: none;
@@ -959,6 +970,10 @@ opacity: 0.75;
   box-shadow: none;
   background-color: var(--white);
 }
+.shop-container .card .atc-btn:hover{
+  background-color: var(--main-color);
+  color: var(--white);
+}
 .shop-container .card .atc-btn svg{
   margin-right: 5px;
   font-size: 16px;
@@ -966,16 +981,10 @@ opacity: 0.75;
 .shop-container .rating span{
   color: rgb(255, 196, 0);
 }
-.shop-container div ul li .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
+.shop-container div ul li .MuiCheckbox-root.Mui-checked{
   color: var(--main-color);
   font-size: 20px;
   box-shadow: none;
-}
-.shop-container div ul li button{
-  color: var(--main-color);
-}
-.shop-container div ul li button:hover{
-  background-color: var(--white);
 }
 .shop-container div ul li .MuiSlider-thumb{
   color: var(--white);
@@ -988,6 +997,9 @@ opacity: 0.75;
 }
 .shop-container div ul li .MuiSlider-valueLabel span{
   color: var(--white);
+}
+.shop-container .pagination{
+  margin-left: 18rem;
 }
 .shop-container div ul li button.Mui-selected{
   color: var(--white);
@@ -1053,7 +1065,7 @@ opacity: 0.75;
     background-color: black;
     border: none;
   }
-  .navbar .dropdown-menu .dropdown-item {
+  .navbar .dropdown-menu a{
     margin-left: 20px;
     color: var(--white);
   }
@@ -1097,6 +1109,10 @@ opacity: 0.75;
   .banner .title h3 strong,
   .banner a {
     font-size: 40px;
+  }
+
+  .shop-container .pagination{
+    margin-left: 12rem;
   }
 }
 @media (max-width: 767px) {
@@ -1158,6 +1174,9 @@ opacity: 0.75;
     height: 40px;
     font-size: 20px;
   }
+  .shop-container .pagination{
+    margin-left: 7rem;
+  }
 }
 @media (max-width: 590px) {
   /* Navbar */
@@ -1176,14 +1195,14 @@ opacity: 0.75;
   }
   /* Carousel */
   .carousal {
-    height: 100vh;
+    height: 80vh;
   }
   .caption {
     width: 95vw;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-15%, -47%);
+    transform: translate(-15%, -60%);
   }
   .caption p {
     font-size: 25px;
@@ -1247,5 +1266,9 @@ opacity: 0.75;
   }
   .detail-container .tabs, .description{
     width: 92vw;
+  }
+
+  .shop-container .pagination{
+    margin-left: 4rem;
   }
 }
