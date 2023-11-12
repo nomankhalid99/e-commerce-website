@@ -31,8 +31,8 @@ body {
   margin: 0 6px;
   margin-left: 20px;
 }
-.navbar .nav-link .active{
-  color: var(--main-color);
+.text-red{
+  color: var(--main-color) !important;
 }
 .navbar .dropdown-menu {
   background-color: var(--white);
@@ -47,7 +47,6 @@ body {
   color: #6d6d6d;
 }
 .navbar .dropdown-menu a:hover {
-  background-color: var(--white);
   color: var(--main-color);
   border-bottom: none;
 }

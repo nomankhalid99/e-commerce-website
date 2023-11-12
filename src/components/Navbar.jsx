@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import {Navbar,Nav,Container,Form,FormControl,Dropdown, Button,} from "react-bootstrap";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 const Navigation = ({cart,totalQuantity}) => {
   const [navbarBackground, setNavbarBackground] = useState("transparent");
+  const location = useLocation();
+  const currentPath = location.pathname;
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,10 +51,10 @@ const Navigation = ({cart,totalQuantity}) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto m-2">
-            <Link to="/" className="nav-link">
+            <Link to="/" className={`nav-link ${currentPath === '/' ? 'text-red':null}`}>
               Home
             </Link>
-            <Link to="#" className="nav-link">
+            <Link to="#" className={`nav-link ${currentPath === '#' ? 'text-red':null}`}>
               Products
             </Link>
             <Dropdown className="nav-item">
@@ -59,15 +62,15 @@ const Navigation = ({cart,totalQuantity}) => {
                 Pages
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Link to="/login" className="nav-link">
+                <Link to="/login" className={`nav-link ${currentPath === '/login' ? 'text-red':null}`}>
                   Login
                 </Link>
-                <Link to="/contact" className="nav-link">
+                <Link to="/contact" className={`nav-link ${currentPath === '/contact' ? 'text-red':null}`}>
                   Contact us
                 </Link>
               </Dropdown.Menu>
             </Dropdown>
-            <Link to="/shop" className="nav-link">
+            <Link to="/shop" className={`nav-link ${currentPath === '/shop' ? 'text-red':null}`}>
               Shop
             </Link>
           </Nav>

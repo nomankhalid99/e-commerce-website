@@ -110,7 +110,7 @@ const Shop = ({ products, cart, setCart }) => {
       </div>
       <Container>
         <Breadcrumbs className="crum" marginTop={2} marginBottom={2} aria-label="breadcrumb">
-          <Link underline="none" color="inherit" href="/">
+          <Link underline="none" color="inherit" to="/">
             Home
           </Link>
           <Typography color="text.primary">Shop</Typography>
