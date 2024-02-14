@@ -57,7 +57,7 @@ const Cart = ({ cart: cartProp, setTotalQuantity }) => {
 
   return (
     <div className="cart-container">
-    <div className='fixed-top bg-black' style={{height:'75px',zIndex:'1'}}></div>
+    <div className='fixed-top bg-black' style={{height:'95px',zIndex:'1'}}></div>
       <div className="bg-img">
         <div className="title d-flex justify-content-center align-items-center">
           <h3 className="text-white fs-1">

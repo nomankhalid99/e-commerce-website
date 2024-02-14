@@ -76,9 +76,9 @@ const Contact = () => {
       <Container>
         <div
           className="fixed-top bg-black"
-          style={{ height: "75px", zIndex: "1" }}
+          style={{ height: "95px", zIndex: "1" }}
         ></div>
-        <Breadcrumbs className="crum" marginTop={11} marginBottom={2} aria-label="breadcrumb">
+        <Breadcrumbs className="crum" marginTop={14} marginBottom={2} aria-label="breadcrumb">
           <Link underline="none" color="inherit" href="/">
             Home
           </Link>

@@ -47,7 +47,6 @@ const Navigation = ({cart,totalQuantity}) => {
       <Container fluid>
         <Navbar.Brand href="/" className=" logo">
           <img src="/logo-w.png" alt="logo" />
-        {/* <span style={{color:'rgb(210, 88, 88)'}}>My</span> Store */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

@@ -20,12 +20,12 @@ const Login = () => {
     <div>
       <div
         className="fixed-top bg-black"
-        style={{ height: "75px", zIndex: "1" }}
+        style={{ height: "95px", zIndex: "1" }}
       ></div>
       <Container className="mb-5 login">
         <Row>
           <Col>
-            <Breadcrumb className="crum mt-2">
+            <Breadcrumb className="crum mt-4">
               <Breadcrumb.Item className="crum-item" href="/">
                 Home
               </Breadcrumb.Item>

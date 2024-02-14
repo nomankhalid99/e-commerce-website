@@ -511,7 +511,7 @@ footer ul li a:hover {
 }
 /* Cart Component */
 .cart-container .bg-img {
-  height: 250px;
+  height: 280px;
   background: url("https://img.freepik.com/free-photo/plain-smooth-maroon-paper-background_53876-128606.jpg?w=1480&t=st=1696697612~exp=1696698212~hmac=0ad95746f0e8cd140241e839fccd6fbf7efbaf30ae7937161cf2db9035fa7339");
   background-size: cover;
   background-repeat: no-repeat;
@@ -519,7 +519,7 @@ footer ul li a:hover {
   overflow: hidden;
 }
 .cart-container .title {
-  margin: 8rem 0;
+  margin: 9rem 0;
 }
 .cart-container .title p {
   font-family: Arial, Helvetica, sans-serif;
@@ -656,7 +656,7 @@ footer ul li a:hover {
 }
 /* Checkout Page */
 .checkout-container .bg-img {
-  height: 250px;
+  height: 290px;
   background: url("https://img.freepik.com/free-photo/close-up-adult-man-holding-shopping-bags_23-2148316178.jpg?w=740&t=st=1697220554~exp=1697221154~hmac=a91e7a851ff407348795195c13c67a9b6c34d140c81ef192a6b40fc99d7a77c0");
   background-size: cover;
   background-repeat: no-repeat;
@@ -664,7 +664,7 @@ footer ul li a:hover {
   overflow: hidden;
 }
 .checkout-container .title {
-  margin: 8rem 0;
+  margin: 10rem 0;
 }
 .checkout-container .title p {
   font-family: Arial, Helvetica, sans-serif;
@@ -930,7 +930,7 @@ span {
 /* Shop page */
 
 .shop-container .bg-img {
-  height: 250px;
+  height: 280px;
   background: url("https://img.freepik.com/free-photo/plain-smooth-maroon-paper-background_53876-128606.jpg?w=1480&t=st=1696697612~exp=1696698212~hmac=0ad95746f0e8cd140241e839fccd6fbf7efbaf30ae7937161cf2db9035fa7339");
   background-size: cover;
   background-repeat: no-repeat;
@@ -938,7 +938,7 @@ span {
   overflow: hidden;
 }
 .shop-container .title {
-  margin: 8rem 0;
+  margin: 10rem 0;
 }
 .shop-container .title p {
   font-family: Arial, Helvetica, sans-serif;

@@ -48,7 +48,7 @@ const Footer = () => {
                 </Col>
             </Row><hr className="mt-5" />
             <div className='text-center'>
-                <p className="py-2">Copyright &copy; 2023 <a href="#">My Store </a>All Rights Reserved</p>
+                <p className="py-2">Copyright &copy; 2023 <a href="#">Grand Galleria </a>All Rights Reserved</p>
             </div>
         </Container>
     </footer>

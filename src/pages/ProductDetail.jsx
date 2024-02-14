@@ -133,10 +133,10 @@ const ProductDetail = ({ products, cart, setCart }) => {
     <div className="detail-container">
       <div
         className="fixed-top bg-black"
-        style={{ height: "75px", zIndex: "2" }}
+        style={{ height: "95px", zIndex: "2" }}
       ></div>
       <Container maxWidth="lg">
-        <Breadcrumbs className="crum" marginTop={11} marginBottom={2} aria-label="breadcrumb">
+        <Breadcrumbs className="crum" marginTop={14} marginBottom={2} aria-label="breadcrumb">
           <Link underline="none" color="inherit" to="/">
             Home
           </Link>

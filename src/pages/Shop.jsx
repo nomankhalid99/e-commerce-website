@@ -99,7 +99,7 @@ const Shop = ({ products, cart, setCart }) => {
     <div className="shop-container">
       <div
         className="fixed-top bg-black"
-        style={{ height: "75px", zIndex: "1" }}
+        style={{ height: "95px", zIndex: "1" }}
       ></div>
       <div className="bg-img">
         <div className="title d-flex justify-content-center align-items-center">
