@@ -7,7 +7,7 @@ const Footer = () => {
         <Container>
             <Row>
                 <Col md= {6}>
-                    <h3><span style={{color:'rgb(210, 88, 88)'}}>My</span> Store</h3>
+                   <img src="/logo-b.png" alt="logo" />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident laboriosam inventore delectus modi perferendis suscipit, corporis eos nam asperiores. Officiis illum pariatur ipsam ex est repellat placeat nobis veniam.
                     </p>
                     <div>

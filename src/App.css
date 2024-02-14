@@ -14,9 +14,9 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-transform: uppercase;
 }
-.navbar .brand {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 30px;
+.navbar .logo img {
+  height: 70px;
+  width: 90px;
 }
 .navbar .navbar-toggler {
   border: none;
@@ -31,7 +31,7 @@ body {
   margin: 0 6px;
   margin-left: 20px;
 }
-.text-red{
+.text-red {
   color: var(--main-color) !important;
 }
 .navbar .dropdown-menu {
@@ -483,6 +483,10 @@ body {
   color: var(--white);
 }
 /* Footer */
+footer img{
+  height: 70px;
+  width: 90px;
+}
 footer h3 {
   font-size: 30px;
   font-weight: bolder;
@@ -725,7 +729,7 @@ footer ul li a:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
 }
-.contact-container .crum a:hover{
+.contact-container .crum a:hover {
   color: var(--main-color);
 }
 .contact-container .office-info p,
@@ -793,11 +797,11 @@ span {
   border-bottom: 1px solid var(--main-color);
 }
 /* Product Detail page */
-.detail-container .crum a{
+.detail-container .crum a {
   text-decoration: none;
   color: #636363;
 }
-.detail-container .crum a:hover{
+.detail-container .crum a:hover {
   color: var(--main-color);
 }
 .detail-container .main-img-container {
@@ -809,7 +813,7 @@ span {
 .detail-container .main-img-container .main-img {
   width: 100%;
   height: 100%;
-  cursor:move;
+  cursor: move;
 }
 .detail-container .product-info .price {
   color: var(--main-color);
@@ -829,10 +833,10 @@ span {
   padding: 5px 30px;
   transition: all 0.3s ease-in-out;
 }
-.detail-container .product-info .rating span{
+.detail-container .product-info .rating span {
   color: rgb(255, 196, 0);
 }
-.detail-container .product-info .atc-btn svg{
+.detail-container .product-info .atc-btn svg {
   font-size: 18px;
   margin-right: 10px;
 }
@@ -840,11 +844,11 @@ span {
   background-color: var(--main-color);
   color: var(--white);
 }
-.detail-container .description{
+.detail-container .description {
   padding: 20px;
   border: 1px solid #dedede;
 }
-.detail-container .tabs button.Mui-selected{
+.detail-container .tabs button.Mui-selected {
   color: var(--main-color);
   border-bottom: 2px solid var(--main-color);
 }
@@ -878,10 +882,10 @@ span {
 }
 .detail-container .slider .slick-prev:before,
 .detail-container .slider .slick-next:before {
-font-family: "slick";
-font-size: 25px;
-line-height: 1;
-opacity: 0.75;
+  font-family: "slick";
+  font-size: 25px;
+  line-height: 1;
+  opacity: 0.75;
   color: rgb(0, 0, 0);
 }
 .detail-container .slider .product-card {
@@ -912,7 +916,7 @@ opacity: 0.75;
   box-shadow: none;
   transition: all 0.3s ease;
 }
-.detail-container .slider .product-card .btn svg{
+.detail-container .slider .product-card .btn svg {
   font-size: 18px;
   margin-right: 10px;
 }
@@ -939,73 +943,72 @@ opacity: 0.75;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
 }
-.shop-container .crum a{
+.shop-container .crum a {
   text-decoration: none;
   color: #636363;
 }
-.shop-container .crum a:hover{
+.shop-container .crum a:hover {
   color: var(--main-color);
 }
-.shop-container .filters{
+.shop-container .filters {
   position: sticky;
   top: 70px;
 }
-.shop-container .card{
+.shop-container .card {
   box-shadow: none;
   border: none;
 }
-.shop-container .card .img{
+.shop-container .card .img {
   object-fit: contain;
   height: 150px;
 }
-.shop-container .card .price{
+.shop-container .card .price {
   color: var(--main-color);
   margin-left: 5px;
 }
-.shop-container .card .atc-btn{
+.shop-container .card .atc-btn {
   color: var(--main-color);
   border-radius: 0%;
   border: 1px solid var(--main-color);
   box-shadow: none;
   background-color: var(--white);
 }
-.shop-container .card .atc-btn:hover{
+.shop-container .card .atc-btn:hover {
   background-color: var(--main-color);
   color: var(--white);
 }
-.shop-container .card .atc-btn svg{
+.shop-container .card .atc-btn svg {
   margin-right: 5px;
   font-size: 16px;
 }
-.shop-container .rating span{
+.shop-container .rating span {
   color: rgb(255, 196, 0);
 }
-.shop-container div ul li .MuiCheckbox-root.Mui-checked{
+.shop-container div ul li .MuiCheckbox-root.Mui-checked {
   color: var(--main-color);
   font-size: 20px;
   box-shadow: none;
 }
-.shop-container div ul li .MuiSlider-thumb{
+.shop-container div ul li .MuiSlider-thumb {
   color: var(--white);
   box-shadow: none;
   border: 1px solid black;
 }
-.shop-container div ul li .MuiSlider-valueLabelOpen{
+.shop-container div ul li .MuiSlider-valueLabelOpen {
   background-color: var(--main-color);
   color: var(--white);
 }
-.shop-container div ul li .MuiSlider-valueLabel span{
+.shop-container div ul li .MuiSlider-valueLabel span {
   color: var(--white);
 }
-.shop-container .pagination{
+.shop-container .pagination {
   margin-left: 18rem;
 }
-.shop-container div ul li button.Mui-selected{
+.shop-container div ul li button.Mui-selected {
   color: var(--white);
   border: none;
   background-color: var(--main-color);
 }
-
 
 /* Responsiveness */
 @media (max-width: 1300px) {
@@ -1064,7 +1067,7 @@ opacity: 0.75;
     background-color: black;
     border: none;
   }
-  .navbar .dropdown-menu a{
+  .navbar .dropdown-menu a {
     margin-left: 20px;
     color: var(--white);
   }
@@ -1110,7 +1113,7 @@ opacity: 0.75;
     font-size: 40px;
   }
 
-  .shop-container .pagination{
+  .shop-container .pagination {
     margin-left: 12rem;
   }
 }
@@ -1173,7 +1176,7 @@ opacity: 0.75;
     height: 40px;
     font-size: 20px;
   }
-  .shop-container .pagination{
+  .shop-container .pagination {
     margin-left: 7rem;
   }
 }
@@ -1212,8 +1215,8 @@ opacity: 0.75;
   .caption .btn-danger {
     font-size: 16px;
   }
-  .carousal .carousel-control-prev ,
-  .carousal .carousel-control-next{
+  .carousal .carousel-control-prev,
+  .carousal .carousel-control-next {
     display: none;
   }
   /* offers */
@@ -1263,11 +1266,12 @@ opacity: 0.75;
   .cart-container .content .labels {
     display: none;
   }
-  .detail-container .tabs, .description{
+  .detail-container .tabs,
+  .description {
     width: 92vw;
   }
 
-  .shop-container .pagination{
+  .shop-container .pagination {
     margin-left: 4rem;
   }
 }
